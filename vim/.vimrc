@@ -1,11 +1,15 @@
 colorscheme oceandeep
 set ruler
-set guifont=Menlo_Regular:h13
+set guifont=Menlo_Regular:h17
 set guioptions-=T
 set number
 set ignorecase
 set autoindent
+
 set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 
 
 function! DoPrettyXML()
@@ -36,3 +40,4 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
+
